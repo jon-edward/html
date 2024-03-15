@@ -177,10 +177,12 @@ class SelectorEvaluator extends Visitor {
         return false;
     }
 
-    // :before, :after, :first-letter/line can't match DOM elements.
-    if (_isLegacyPsuedoClass(node.name)) return false;
+    // // :before, :after, :first-letter/line can't match DOM elements.
+    // if (_isLegacyPsuedoClass(node.name)) return false;
 
-    throw _unimplemented(node);
+    // throw _unimplemented(node);
+
+    return false;
   }
 
   @override
